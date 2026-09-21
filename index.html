@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4b41b" />
+  <link rel="icon" href="data:," />
+  <title>Flores amarillas para ti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scene" aria-label="Animación de flores amarillas">
+    <section class="cover" id="cover" aria-label="Sorpresa">
+      <div class="cover-orbit orbit-one" aria-hidden="true"></div>
+      <div class="cover-orbit orbit-two" aria-hidden="true"></div>
+      <div class="cover-content">
+        <p class="cover-kicker">abre esto cuando estés sonriendo</p>
+        <h2>Tengo una<br><em>sorpresa</em> para ti<br>el día de hoy<span>.</span></h2>
+        <button class="open-surprise" id="openSurprise" type="button">
+          <span class="open-star" aria-hidden="true">✦</span>
+          descubrir
+          <span class="open-arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+      <p class="cover-footer">hecho especialmente para ti</p>
+    </section>
+    <canvas id="garden" aria-hidden="true"></canvas>
+    <iframe
+      id="youtubeMusic"
+      class="youtube-music"
+      src="https://www.youtube.com/embed/PykXcyfPUk4?autoplay=0&loop=1&playlist=PykXcyfPUk4&controls=0&disablekb=1&playsinline=1&rel=0&enablejsapi=1"
+      title="Música de fondo"
+      allow="autoplay; encrypted-media"
+      aria-hidden="true">
+    </iframe>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="sun-glow" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="mark"><span class="mark-dot"></span><span>21 / 09</span></div>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="true">
+        <span class="sound-icon" aria-hidden="true">♪</span>
+        <span id="soundLabel">pausar música</span>
+      </button>
+    </header>
+
+    <section class="message">
+      <h1>Me acordé<br>de ti hoy,<br><em>por eso esto es para ti.</em></h1>
+      <p class="dedication">No sé si te lo digo lo suficiente,<br>pero contigo todo se siente un poco más lindo.</p>
+      <button class="replay" id="replay" type="button"><span>✦</span> hacer florecer</button>
+    </section>
+
+    <footer class="bottom-note">
+      <span>para ti, hoy</span>
+      <span class="line"></span>
+      <span>con cariño</span>
+    </footer>
+    <div class="hint" id="hint">toca las flores</div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
