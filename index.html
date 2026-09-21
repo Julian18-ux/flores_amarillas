@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4b41b" />
+  <title>Flores amarillas para ti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scene" aria-label="Animación de flores amarillas">
+    <canvas id="garden" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="sun-glow" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="mark"><span class="mark-dot"></span><span>21 / 09</span></div>
+      <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false">
+        <span class="sound-icon" aria-hidden="true">♪</span>
+        <span id="soundLabel">encender música</span>
+      </button>
+    </header>
+
+    <section class="message">
+      <h1>Me acordé<br>de ti hoy,<br><em>por eso este es para ti.</em></h1>
+      <p class="dedication">No sé si te lo digo lo suficiente,<br>pero contigo todo se siente un poco más lindo.</p>
+      <button class="replay" id="replay" type="button"><span>✦</span> hacer florecer</button>
+    </section>
+
+    <footer class="bottom-note">
+      <span>para ti, hoy</span>
+      <span class="line"></span>
+      <span>con cariño</span>
+    </footer>
+    <div class="hint" id="hint">toca las flores</div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
